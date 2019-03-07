@@ -1,0 +1,26 @@
+
+{
+    "prod": [{
+        "urls": ["root:123456@111.111.111.111:22"],
+        "cmds": [{
+                "type": "local-cmd",
+                "cmd": "npm run build"
+            },
+            {
+                "type": "remote-cmd",
+                "cmd": "mkdir -p /home/test"
+            },
+            {
+                "type": "upload-file",
+                "files": ["dist", "server.js"],
+                "remote": "/home/test"
+            },
+            {
+                "type": "remote-cmd",
+                "cmd": "npm i && node server.js"
+            }
+        ]
+    }],
+    "dev": [],
+    "test": []
+}

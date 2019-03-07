@@ -1,0 +1,4 @@
+node_modules
+test
+deploy-test.json
+npm-debug.log

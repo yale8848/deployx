@@ -1,0 +1,31 @@
+{
+    "name": "deployx",
+    "version": "0.0.1",
+    "description": "node deploy",
+    "main": "index.js",
+    "bin": {
+        "deployx": "index.js"
+    },
+    "scripts": {
+        "deploy": "deployx -e prod",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yale8848/node-deploy"
+    },
+    "keywords": [
+        "node",
+        "ssh",
+        "sftp",
+        "deploy"
+    ],
+    "author": "yale <royal8848@163.com>",
+    "license": "MIT",
+    "dependencies": {
+        "commander": "^2.19.0",
+        "fs-extra": "^7.0.1",
+        "ssh2-promise": "^0.1.3",
+        "zip-dir": "^1.0.2"
+    }
+}
